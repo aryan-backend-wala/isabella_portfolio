@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 0 8px 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  margin: 0 48px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#search {
+  width: 215px;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+}
+
+.navbar-item {
+  list-style: none;
+  padding: 0 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(52, 58, 64);
+  font-family: "Alata", sans-serif;
+}
+
+.navbar-link {
+  padding: 8px;
+}
+
+.navbar-brand {
+  padding: 5px 0;
+  margin-right: 16px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color : rgb(0, 123, 255);
+  font-family: "Alata", sans-serif;
+}
+
+#search {
+  background-color: rgb(248, 249, 250);
+  border: 1px solid rgb(234, 237, 240);
+  padding: 6px 12px;
+  border-radius: 16px;
+  height: 40px;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  margin-right: auto;
+}
+
+#search:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 8px 56px 0 rgba(15, 80, 100, 0.16);
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+}

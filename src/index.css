@@ -75,4 +75,5 @@ body {
   height: 100vh;
   background-color: var(--background-color);
   font-size: var(--bs-body-font-size);
+  font-family: var(--bs-font-sans-serif);
 }
