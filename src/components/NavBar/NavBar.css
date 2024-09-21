@@ -48,8 +48,11 @@
 .navbar-item.dark {
   color: var(--text-color-dark);
 }
+
 .navbar-link {
   padding: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-brand {

@@ -20,11 +20,14 @@ export default function NavBar() {
           <div id='navbar-content'>
             <ul className='navbar-nav'>
               {
-                linkList.map(link => (
-                  <li key={link} className={`navbar-item ${isDarkMode ? 'dark' : 'light'}`}>
-                    <a className='navbar-link'>{link}</a>
-                  </li>
-                ))
+                linkList.map(link => {
+                  const href = `#${link.toLowerCase().replace(/\s+/g, '-')}`;
+                  return (
+                    <li key={link} className={`navbar-item ${isDarkMode ? 'dark' : 'light'}`}>
+                      <a href={href} className='navbar-link'>{link}</a>
+                    </li>
+                  )
+                })
               }
               <li className={`navbar-item ${isDarkMode ? 'dark' : 'light'}`}>
                 <button id='theme-toggle' onClick={toggleTheme} >
