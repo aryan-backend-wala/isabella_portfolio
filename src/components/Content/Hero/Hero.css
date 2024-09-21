@@ -1,5 +1,6 @@
 #hero {
   padding: 48px 0;
+  height: 100vh;
 }
 
 .hero-container {
@@ -29,12 +30,28 @@
   opacity: 0.6;
 }
 
+.subtitle.light {
+  color: inherit;
+}
+
+.subtitle.dark {
+  color: var(--text-color-dark);
+}
+
 #hero h2 {
   font-size: clamp(40px, 8vw, 80px);
   color: var(--primary-color);
   font-weight: 500;
   margin-bottom: 8px;
 }
+
+#hero h2.light {
+  color: var(--primary-color);
+}
+
+#hero h2.dark {
+  color: var(--primary-color-dark);
+} 
 
 #hero h3 {
   font-size: clamp(40px, 8vw, 60px);
@@ -44,11 +61,27 @@
   color: var(--text-color);
 }
 
+#hero h3.light {
+  color: var(--text-color);
+}
+
+#hero h3.dark {
+  color: var(--text-color-dark);
+}
+
 .hero-content {
   margin-top: 20px;
   max-width: 640px;
   opacity: 0.8;
   color: var(--text-color);
+}
+
+.hero-content.light {
+  color: var(--text-color);
+}
+
+.hero-content.dark {
+  color: var(--text-color-dark);
 }
 
 .left-content {
@@ -62,6 +95,16 @@
   border: 1px solid var(--primary-color);
   color: var(--text-color);
   border-radius: .75rem;
+}
+
+#hero a.btn.light {
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+}
+
+#hero a.btn.dark {
+  border: 1px solid var(--primary-color-dark);
+  color: var(--text-color-dark);
 }
 
 .btn {
@@ -92,11 +135,26 @@
 }
 
 #hero a.btn.social-icon {
-  color: var(--primary-color);
   line-height: 0%;
   border-radius: 50%;
   padding: 0.7rem;
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+#hero a.btn.social-icon.light {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#hero a.btn.social-icon.dark {
+  color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
+}
+
+#hero a.btn.social-icon.dark:hover {
+  border-color: var(--text-secondary-color);
+  background-color: transparent;
 }
 
 .fa-icons:hover {
