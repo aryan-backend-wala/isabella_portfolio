@@ -17,14 +17,6 @@
   line-height: 1.2;
 }
 
-.h3.light {
-  color: var(--text-secondary-color);
-}
-
-.h3.dark {
-  color: var(--text-secondary-color-dark);
-}
-
 .about-row {
   display: flex;
   flex-direction: row;
@@ -67,6 +59,14 @@ p {
   color: var(--primary-color);
   position: absolute;
   left: 0px;
+}
+
+#about-me ul li.light::before {
+  color: var(--primary-color);
+}
+
+#about-me ul li.dark::before {
+  color: var(--text-color-dark);
 }
 
 #about-me a {
