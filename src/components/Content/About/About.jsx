@@ -27,7 +27,7 @@ export default function About() {
           <ul>
             {
               listItems.map(skill => (
-                <li className={isDarkMode ? 'dark' : 'light'}>{skill}</li>
+                <li key={skill} className={isDarkMode ? 'dark' : 'light'}>{skill}</li>
               ))
             }
           </ul>

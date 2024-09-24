@@ -1,0 +1,60 @@
+#experience h3 {
+  color: var(--text-secondary-color);
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.exp-row {
+  height: 382px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.exp-container {
+  padding: 48px 12px;
+  height: 100%;
+  width: 856px;
+}
+
+.exp-inner-box {
+  padding: 8px 16px 0 16px;
+  height: 100%;
+  background-color: white;
+}
+
+#experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 16px;
+  font-family: "Alata", sans-serif;
+  height: 41.6px;
+  align-items: center;
+  font-weight: 400;
+}
+
+#experience ul li {
+  padding: 0 4px;
+  text-transform: capitalize;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+#experience ul li:hover {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--text-secondary-color);
+}
+
+.tab-content {
+  padding-top: 8px;
+  padding-bottom: 48px;
+  height: 220px;
+}
